@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Robotaxi: The Ride of the Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slide-up {
+            opacity: 0;
+            animation: slideUp 0.8s ease-out forwards;
+        }
+        .hover-grow {
+            transition: transform 0.3s ease;
+        }
+        .hover-grow:hover {
+            transform: scale(1.03);
+        }
+        .bg-gradient {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+        }
+        .prose-invert p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.8;
+        }
+        .prose-invert h2, .prose-invert h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="bg-black bg-opacity-70 fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-red-500">Robotaxi Revolution</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#blog" class="hover:text-red-500 transition">Blog</a></li>
+                <li><a href="#features" class="hover:text-red-500 transition">Features</a></li>
+                <li><a href="#booking" class="hover:text-red-500 transition">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Robotaxi-Blog-Hero.jpg')">
+        <div class="text-center slide-up">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Tesla Robotaxi: Your Autonomous Adventure Awaits</h2>
+            <p class="text-lg md:text-xl mb-6">Hop in and experience the future of travel in Austin!</p>
+            <a href="#booking" class="bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-600 transition">Ride Now</a>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-gradient">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 slide-up">The Tesla Robotaxi: Austin’s Newest Star</h2>
+            <article class="prose prose-invert prose-lg mx-auto slide-up text-center" style="animation-delay: 0.2s;">
+                <p class="italic text-gray-400">Posted on June 23, 2025</p>
+                <p>Picture this: you’re in Austin, Texas, and a sleek, driverless Tesla Model Y pulls up to whisk you away. No driver, no fuss—just you and the future. That’s the Tesla Robotaxi, which officially hit the streets on June 22, 2025, and it’s already turning heads.</p>
+                <p>Tesla’s Robotaxi isn’t just a car; it’s a glimpse into tomorrow. Powered by Full Self-Driving (FSD) tech, it uses cameras and AI to navigate Austin’s bustling streets with ease. Forget clunky lidar or radar—this baby sees the world like we do, and it’s smarter than ever. Launched as part of Tesla’s ambitious autonomous ride-hailing network, it’s currently cruising in select Austin neighborhoods, with remote operators keeping an eye on things for extra safety.</p>
+                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Robotaxi-Blog-Image.jpg" alt="Tesla Robotaxi in Austin" class="rounded-lg my-6 hover-grow mx-auto">
+                <p>Why’s everyone buzzing? For starters, it’s eco-friendly, running on Tesla’s electric Model Y platform. Plus, it’s affordable—rides cost a flat $4.20 (nice touch, Elon). And let’s talk about the vibe: sliding into a Robotaxi feels like stepping into a sci-fi flick. The interior is sleek, the ride is smooth, and you can kick back while Tesla’s AI handles the wheel.</p>
+                <p>Looking ahead, Tesla’s got big plans. The Cybercab, a dedicated Robotaxi model, is slated for production in 2026 and will cost under $30,000 to buy. For now, Austinites can book rides through the Tesla app, with expansion to other cities on the horizon. Whether you’re a tech geek or just hate parking, the Robotaxi is here to change the game.</p>
+                <p>Ready to ride? Scroll down to learn how to book your first trip!</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 slide-up">What Makes Robotaxi Epic?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg hover-grow slide-up">
+                    <h3 class="text-xl font-semibold mb-4">Smart AI Vision</h3>
+                    <p>Camera-based FSD tech sees and thinks like a human, navigating with precision.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg hover-grow slide-up" style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-semibold mb-4">Safe & Monitored</h3>
+                    <p>Geofenced in Austin with remote oversight for a worry-free ride.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg hover-grow slide-up" style="animation-delay: 0.4s;">
+                    <h3 class="text-xl font-semibold mb-4">Green Vibes</h3>
+                    <p>Electric Model Y means zero emissions and a cleaner planet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-gradient">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 slide-up">How to Ride the Robotaxi</h2>
+            <div class="bg-gray-800 p-8 rounded-lg slide-up">
+                <h3 class="text-2xl font-semibold mb-4">Pricing</h3>
+                <p class="mb-4">Rides are a flat $4.20 in Austin (as of June 23, 2025). The upcoming Cybercab will retail for under $30,000 (production starts 2026).</p>
+                <h3 class="text-2xl font-semibold mb-4">Booking Steps</h3>
+                <ol class="list-decimal pl-6 space-y-2">
+                    <li>Grab the Tesla app from the App Store or Google Play.</li>
+                    <li>Log in or create a Tesla account.</li>
+                    <li>Tap “Robotaxi” and pick your Austin pickup spot.</li>
+                    <li>Confirm and enjoy your driverless ride!</li>
+                </ol>
+                <p class="mt-4 italic">Note: Currently available in select Austin areas. More cities coming soon!</p>
+                <a href="https://www.tesla.com" target="_blank" class="mt-6 inline-block bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-600 transition">Get the Tesla App</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Robotaxi Revolution Blog. All rights reserved.</p>
+            <p class="mt-2">Check out <a href="https://www.tesla.com" class="text-red-500 hover:underline">tesla.com</a> for more!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Trigger animations on scroll
+        const slideElements = document.querySelectorAll('.slide-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
+        slideElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
